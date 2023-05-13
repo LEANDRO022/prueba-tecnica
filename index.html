@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PAGINA WEB</title>
+	<link rel="icon" href="imgs/logo.jpg" type="image/png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Mi Página Web</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Acerca de</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<p>Bienvenido a este sitio Web
+			<br>
+			espero te guste y me des la oportunidad
+			<br>
+			de hacer parte de su empresa
+		</p>
+	</main>
+
+	<div>
+
+		<div id="photo"></div>
+
+		<div>
+
+			<button class="botones" onclick="cambiarFoto('imgs/imagen1.jpg')"><img src="imgs/imagen1.jpg" alt=""
+					width="auto" height="100px"></button>
+			<button class="botones" onclick="cambiarFoto('imgs/imagen2.jpg')"><img src="imgs/imagen2.jpg" alt=""
+					width="auto" height="100px"></button>
+			<button class="botones" onclick="cambiarFoto('imgs/imagen3.jpg')"><img src="imgs/imagen3.jpg" alt=""
+					width="auto" height="100px"></button>
+			<button class="botones" onclick="cambiarFoto('imgs/imagen4.jpg')"><img src="imgs/imagen4.jpg" alt=""
+					width="auto" height="100px"></button>
+
+		</div>
+	</div>
+
+	<footer>
+		<p>Copyright © 2023</p>
+	</footer>
+
+	<br><br>
+
+	<script type="text/javascript">
+
+		function cambiarFoto(photo) {
+			document.getElementById("photo").innerHTML = "<img src=" + photo + " width=auto height=300px>"
+		}
+
+	</script>
+
+</body>
+
+</html>
